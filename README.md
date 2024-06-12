@@ -171,16 +171,17 @@ New types of releases can be [added here](https://github.com/googleapis/release-
 
 If you have a root component (path is `.` or unset), then the action will also output:
 
-| output               | description                                                                                                |
-| -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `release_created`    | `true` if a root component release was created, `false` otherwise                                          |
-| `upload_url`         | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
-| `html_url`           | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
-| `tag_name`           | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
-| `major`              | Number representing major semver value                                                                     |
-| `minor`              | Number representing minor semver value                                                                     |
-| `patch`              | Number representing patch semver value                                                                     |
-| `sha`                | SHA that a GitHub release was tagged at                                                                    |
+| output            | description                                                                                                |
+|-------------------| ---------------------------------------------------------------------------------------------------------- |
+| `release_created` | `true` if a root component release was created, `false` otherwise                                          |
+| `upload_url`      | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
+| `html_url`        | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
+| `tag_name`        | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
+| `id`              | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
+| `major`           | Number representing major semver value                                                                     |
+| `minor`           | Number representing minor semver value                                                                     |
+| `patch`           | Number representing patch semver value                                                                     |
+| `sha`             | SHA that a GitHub release was tagged at                                                                    |
 
 ### Path outputs
 
@@ -190,11 +191,12 @@ directory, then your outputs will have the `path` prefixed to the output name.
 This prefix allows you to distinguish values for different releases.
 
 | output                    | description                                                                                                |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+|---------------------------| ---------------------------------------------------------------------------------------------------------- |
 | `<path>--release_created` | `true` if the release was created, `false` otherwise                                                       |
 | `<path>--upload_url`      | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
 | `<path>--html_url`        | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
 | `<path>--tag_name`        | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
+| `<path>--id`               | Directly related to [**Create a release**](https://developer.github.com/v3/repos/releases/#response-4) API |
 | `<path>--major`           | Number representing major semver value                                                                     |
 | `<path>--minor`           | Number representing minor semver value                                                                     |
 | `<path>--patch`           | Number representing patch semver value                                                                     |
